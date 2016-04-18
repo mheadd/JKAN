@@ -1,3 +1,5 @@
+![JKAN logo, made by @JJediny](https://raw.githubusercontent.com/timwis/jkan/gh-pages/img/jkan.png)
+
 # JKAN [![Build Status](https://travis-ci.org/timwis/jkan.svg?branch=gh-pages)](https://travis-ci.org/timwis/jkan) [![Join the chat at https://gitter.im/timwis/jkan](https://badges.gitter.im/timwis/jkan.svg)](https://gitter.im/timwis/jkan?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A lightweight, backend-free open data portal, powered by Jekyll
 
@@ -13,24 +15,10 @@ out or give feedback.
 [Demo site](https://demo.jkan.io)
 
 ## Installation
-Just click "Fork" at the top-right of this page. (You'll need a [GitHub account](https://github.com/join?return_to=%2Ftimwis%2Fjkan&source=login)).
-You can then access it at `<your_github_username>.github.io/jkan`.
+See [Get Started](https://jkan.io/#get-started) on [jkan.io](https://jkan.io) for an installation wizard,
+or follow the [manual installation](https://github.com/timwis/jkan/wiki/Manual-Installation) instructions yourself.
 
-From there, you can use the [built-in edit button](https://help.github.com/articles/editing-files-in-your-repository/) 
-on github to edit [`_config.yml`](_config.yml) and the datasets in the [`_datasets`](_datasets) directory to manage
-your site.
-
-Alternatively, you can use JKAN's user-friendly editing pages.
-
-![Screenshot of user-friendly editing page](http://i.imgur.com/e12N0oQ.png)
-
-But doing so requires one more installation step: setting up authentication. Fortunately there's a user-friendly page
-for doing that too. Just go to your setup page (ie. `<your_github_username>.github.io/jkan/setup`)
-
-![Screenshot of setup page](http://i.imgur.com/PARLkvU.png)
+For configuration details, see the [wiki](https://github.com/timwis/jkan/wiki)
 
 ## Development
-* Requires [Jekyll](http://jekyllrb.com), a ruby thing
-* Run a web server that recompiles on changes using `jekyll serve --baseurl ""`. Add the experimental `--incremental`
-flag for faster recompilation.
-* Committing to the `gh-pages` branch will automatically compile the jekyll site 
+Please see the [Architecture](https://github.com/timwis/jkan/wiki/Architecture) page in the wiki.
