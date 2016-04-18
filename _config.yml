@@ -1,35 +1,25 @@
 title: JKAN
-description: A lightweight, backend-free open data portal powered by Jekyll.
+greeting: Welcome to JKAN
+description: A lightweight, backend-free open data portal, powered by Jekyll.
 baseurl: /jkan
+logo: /img/jkan.png
+
+# Site theme
+theme: Default
 
 # Authentication
-github_client_id: e46dd02eeea9730c5273
-gatekeeper_host: https://jkan-test-syr.herokuapp.com
+github_client_id: 
+gatekeeper_host: 
 
-# Categories
-category_list:
-  - Arts / Culture / History
-  - Budget / Finance
-  - Economy
-  - Education
-  - Elections / Politics
-  - Environment
-  - Food
-  - Health / Human Services
-  - Parks / Recreation
-  - Planning / Zoning
-  - Public Safety
-  - Real Estate / Land Records
-  - Transportation
-  - Uncategorized
-
-# Link for the "fork me on github" banner. Remove this line to suppress banner.
-fork_me_url: https://github.com/timwis/jkan
+# Dataset schema
+schema: default
 
 # Nav bar
 navigation:
   - title: Datasets
     url: /datasets/
+  - title: Organizations
+    url: /organizations/
 
 # Collections
 collections:
@@ -37,7 +27,8 @@ collections:
     output: true
     permalink: /datasets/:path/
   organizations:
-    output: false
+    output: true
+    permalink: /organizations/:path/
 
 # Collections (cont'd)
 defaults:
@@ -48,11 +39,40 @@ defaults:
       layout: dataset
       category: Uncategorized
       organization: N/A
+  - scope:
+      path: ""
+      type: organizations
+    values:
+      layout: organization
 
 # Markdown settings
 markdown: kramdown
 kramdown:
   input: GFM
+
+# Google Analytics
+google_analytics:
+  enabled: false
+  code: "UA-XXXXXX-1"
+
+# US Digital Analytics Program - https://analytics.usa.gov
+digital_analytics_program:
+  enabled: false
+  agency: ""
+  subagency: ""
+
+# Hypothesis.io - Annotator
+hypothesis:
+  enabled: false
+
+# Twitter
+twittercard:
+  enabled: false
+  username: "@"
+
+# Open Graph
+opengraph:
+  enabled: true
 
 # Exclude these files from the build
 exclude:
